@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="g-page">
+
+        <div class="g-top">
+            <div class="m-top">
+            <!-- <img src="img/g-tt.png" alt=""> -->
+            <div class="m-tit p1"></div>
+            </div>
+            
+        </div> 
+        <div class="g-main">
+            <div class="g-wrap">
+                 <div class="m-user">
+                    <ul>
+                        <li><i></i>未使用过众用助手的所有试客联盟/众划算会员。</li>    
+                        <li><i class="tip"></i>参与的会员需在2015年6月1日前注册并通过手机验证。</li>
+                    </ul>
+                    <em></em>
+                 </div>
+                 <div class="g-con" >
+                     <div class="m-con" id="one">
+                         <div class="m-tit p3"></div>
+                         <div class="m-cont f-cb">
+                             <div class="m-tex">
+                                 <ul>
+                                     <li><em></em> 扫描二维码安装众用助手(目前仅支持安卓手机用户)</li>
+                                     <li><em class="s1"></em>完成首次补贴活动(强烈推荐众划算36元补贴活动)</li>
+                                     <li class="f-cb">
+                                         <a class="m-circle"></a>
+                                         <a class="arr"></a>
+                                         <a class="m-circle step2"></a>
+                                         <a class="arr"></a>
+                                         <a class="m-circle step3"></a>
+                                         <a class="arr"></a>
+                                         <a class="m-circle step4"></a>
+                                     </li>
+                                     <li><em class="s2"></em>获得第一笔补贴巨款后，5元现金立即发放至您的互联支付帐户内。</li>
+                                 </ul>
+                             </div>
+                             <div class="m-down">
+                                 <img src="img/g-qrcode.png" alt="">
+                                 <a href="">下载</a>
+                             </div>
+                         </div>
+                         <div class="m-tit p2"></div>
+                     </div>
+                     <div class="m-con" id="two" style="display:none" >
+                         <div class="m-tit p2"></div>
+                         <ul>
+                             <li><i class="a"></i>活动时间：2015年7月1日-7月30日;</li>
+                             <li><i class="b"></i> 活动目前仅限Android用户参与； </li>
+                             <li><i class="c"></i>参与会员条件：在2015年6月1日前注册并已验证过手机的试客联盟/众划算会员</li>
+                             <li><i class="d"></i>活动期间，每个用户仅限一次</li>
+                             <li><i class="e"></i>5元现金奖励将在完成首次补贴活动后，立即返还会员的互联支付账户中，会员可根据需要进行提现；</li>
+                             <li><i class="f"></i>补贴活动参与规则参见《众用助手会员规则》；</li>
+                             <li><i class="g"></i>众用助手有权给予活动数据对本次活动参与情况进行分析，发生包括不限于作弊、恶意领取补贴等违规问题时；</li>
+                         </ul>
+                         <div class="m-tit p3"></div>
+                         <div class="m-arrow"  index="2">
+                             <div class="arrow"></div>
+                         </div>
+                     </div>
+                     <div class="m-arrow">
+                        <div class="arrow"></div>
+                    </div>
+                    <sub></sub>
+                    <sub class="yun"></sub>
+                 </div>
+                 <!-- <div class="g-line"></div> -->
+            </div>
+         
+        </div>
+
+        <div class="g-foot">
+            <div class="m-foot">
+                <div class="m-ft f-cb">
+                    <a class="help" href="">帮助中心</a>
+                    <a class="kf" href="">帮助中心</a>
+                    <a class="gf" href="">帮助中心</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<script src="js/jquery.js"></script>
+<script>
+    $(function () {
+        var b = 0, c = 30, d = $(".arrow");
+        function a() {
+            var e = 10;
+            0 == b ? c++ : c--, c > 60 && (b = 1), 30 > c && (b = 0, e = 500), d.css("margin-top", c), setTimeout(function () {
+                a()
+            }, e)
+        }
+        a()
+         $(".m-arrow").click(function(){
+          $("#one").toggle();
+          $("#two").toggle();
+          });
+    })
+    
+</script>
+</body>
+</html>
